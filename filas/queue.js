@@ -3,10 +3,8 @@ let Queue = (function() {
   const items = new WeakMap()
 
   class Queue {
-    #teste = 'elder'
 
     constructor() {
-      console.log(this.#teste)
       items.set(this, [])
     }
 
