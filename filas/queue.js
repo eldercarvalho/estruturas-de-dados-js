@@ -31,7 +31,7 @@ let Queue = (function() {
 
     size() {
       let q = items.get(this)
-      return q.length === 0
+      return q.length
     }
 
     print() {

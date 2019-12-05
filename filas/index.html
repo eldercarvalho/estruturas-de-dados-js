@@ -7,17 +7,31 @@
   <title>Document</title>
 </head>
 <body>
-  <script src="queue.js"></script>
+  <script src="Queue.js"></script>
+  <script src="PriorityQueue.js"></script>
+  <script src="HotPotatoe.js"></script>
   <script>
-    let queue = new Queue();
-    queue.enqueue(2)
-    queue.enqueue('Elder')
-    queue.print()
-    queue.dequeue()
-    queue.print()
-    queue.enqueue('2 de novo')
-    queue.print()
-    console.log(queue)
+    // let queue = new Queue();
+    // queue.enqueue(2)
+    // queue.enqueue('Elder')
+    // queue.print()
+    // queue.dequeue()
+    // queue.print()
+    // queue.enqueue('2 de novo')
+    // queue.print()
+    // console.log(queue)
+
+    // let priorityQueue = new PriorityQueue()
+    // priorityQueue.enqueue('Elder', 2)
+    // priorityQueue.enqueue('Genoveva', 1)
+    // priorityQueue.enqueue('Antonio', 1)
+    // priorityQueue.print()
+    // priorityQueue.dequeue()
+    // priorityQueue.print()
+
+    let nameList = ['Elder', 'Megaman', 'Metroid', 'Castlevania', 'Halo']
+    let winner = hotPotatoe(nameList, 2)
+    console.log('the winner is: ' + winner)
   </script>
 </body>
 </html>
