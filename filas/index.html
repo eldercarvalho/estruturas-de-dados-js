@@ -10,6 +10,7 @@
   <script src="Queue.js"></script>
   <script src="PriorityQueue.js"></script>
   <script src="HotPotatoe.js"></script>
+  <script src="LinkedList.js"></script>
   <script>
     // let queue = new Queue();
     // queue.enqueue(2)
@@ -29,9 +30,22 @@
     // priorityQueue.dequeue()
     // priorityQueue.print()
 
-    let nameList = ['Elder', 'Megaman', 'Metroid', 'Castlevania', 'Halo']
-    let winner = hotPotatoe(nameList, 2)
-    console.log('the winner is: ' + winner)
+    // let nameList = ['Elder', 'Megaman', 'Metroid', 'Castlevania', 'Halo']
+    // let winner = hotPotatoe(nameList, 2)
+    // console.log('the winner is: ' + winner)
+
+    let linkedList = new LinkedList()
+    console.log('Insere 3 nós')
+    linkedList.append(15)
+    linkedList.append(14)
+    linkedList.append(13)
+    console.log(linkedList.toString())
+    console.log('Remove o nó na posição 2')
+    linkedList.removeAt(2)
+    console.log(linkedList.toString())
+    console.log('Insere um nó na posição 1')
+    linkedList.insert(0, 22)
+    console.log(linkedList.toString())
   </script>
 </body>
 </html>
